@@ -1,9 +1,7 @@
-@import url("layout.css");
-
-@import url("basscss.min.css");
 @import url("bootstrap.min.css");
 @import url("bootstrap-social.css");
 @import url("colors.css");
+@import url("niquin.css");
 @import url("jquery.dataTables.min.css");
 
 

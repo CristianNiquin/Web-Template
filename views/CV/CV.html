@@ -7,19 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Document </title>
     
-    <link rel="stylesheet" href="www/css/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="www/css/app.css">
-    <link rel="stylesheet" href="www/css/style.css">
+    <link rel="stylesheet" href="/www/css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/www/css/app.css">
+    <link rel="stylesheet" href="/www/css/style.css">
 
-    <script src="www/js/jquery.js"></script>
-    <script src="www/js/jquery.dataTables.min.js"></script>
-    <script src="www/js/popper.min.js"></script>
-    <script src="www/js/bootstrap.min.js"></script>
+    <script src="/www/js/jquery.js"></script>
+    <script src="/www/js/jquery.dataTables.min.js"></script>
+    <script src="/www/js/popper.min.js"></script>
+    <script src="/www/js/bootstrap.min.js"></script>
 
-    <script src="www/js/moment.min.js"></script>
-    <script src="www/js/sweetalert.min.js"></script>
+    <script src="/www/js/moment.min.js"></script>
+    <script src="/www/js/sweetalert.min.js"></script>
 
-    <script src="www/js/app.js"></script>
+    <script src="/www/js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body {
@@ -34,6 +34,17 @@
         aside {
             background-color: #888;
         }
+
+        .principal {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 600;
+        }
+        .secundario {
+            font-weight: 100;
+        }
+        .span {
+            color: #888;
+        }
     </style>
 </head>
 
@@ -44,10 +55,10 @@
     </header>
 
     <nav class="nav-top" id="navtop">
-        <a class="nav-a" href="views/CV/CV.html"> CV </a>
-        <a class="nav-a" href="views/Dashboard/Dashboard.html"> DASHBOARD </a>
-        <a class="nav-a" href="#"> PROCESSING </a>
-        <a class="nav-a" href="#"> PRESENTATION </a>
+        <a class="nav-a" href="views/">Home</a>
+        <a class="nav-a" href="#">News</a>
+        <a class="nav-a" href="#">Contact</a>
+        <a class="nav-a" href="#">About</a>
         <a href="javascript:void(0);" class="nav-icon" onclick="Btn_Top_Nav()">
             <i class="fa fa-bars"></i>
         </a>
@@ -57,86 +68,53 @@
         
         <div class="row">
 
-            <section class="col-9">
+            <section class="col-8">
                 <br>
 
                 <div class="row">
-                    <div class="col-3 text-center">
-                        <i class="fas fa-spinner fa-pulse fa-2x text-success"></i>
+
+                    <div class="col-9">
+                        <section>
+                            <h1 class="h1" style="font-family: 'Merriweather', serif;"> Cristian Polo Niquin </h1>
+                            <strong> Bachiller en Ciencias de la Computación, </strong> <span style="font-style: italic"> Candidato a Titulación en Ingeniería Informática </span>
+                        </section>
                     </div>
-                    <div class="col-3 text-center">
-                        <i class="fas fa-spinner fa-pulse fa-2x text-warning"></i>
+        
+                    <div class="col-3">
+                        <section>
+                            <label for="" style="font-family: 'Merriweather', serif;"> Trujillo, La Libertad </label>
+                            <h6> (+51) 952490241 </h6>
+                            <h6> cd.niquin@gmail.com </h6>
+                        </section>
                     </div>
-                    <div class="col-3 text-center">
-                        <i class="fas fa-spinner fa-pulse fa-2x text-danger"></i>
-                    </div>
-                    <div class="col-3 text-center">
-                        <i class="fas fa-spinner fa-pulse fa-2x text-info"></i>
-                    </div>
+        
                 </div>
+        
+                <br><br>
 
-                <br>
-
-                <div class="row">
+                <div class="row">        
                     <div class="col-12">
-                        <div class="table-responsive">
-                            <table class="table-bordered table-striped" style="width: 100%">
-                                <caption> Personas </caption>
-                                <thead>
-                                    <tr>
-                                        <th> # </th>
-                                        <th> Nombres </th>
-                                        <th> DNI </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td> 1 </td>
-                                        <td> Cristian </td>
-                                        <td> 47373913 </td>
-                                    </tr>
-                                    <tr>
-                                        <td> 2 </td>
-                                        <td> Daniel </td>
-                                        <td> 47373913 </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
+                        <h6 class="h6 text-info"> EXPERIENCIA LABORAL Y ACADEMICA </h6>
+                        <section class="mt-4">
+                            <h6 class="principal"> NTT Data (Everis), <span class="secundario"> Trujillo, Peru - Automation Tester </span></h6>
+                            <label class="span"> Agosto 2021 - Actualidad </label>
+                            <p>
 
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="card card-default border" style="background: #eee">
-                            <div class="card-body btn-bitbucket">
+                            </p>
+                        </section>
+                        <section class="mt-4">
+                            <h6> NTT Data (Everis), <span> Trujillo, Peru - Automation Tester </span></h6>
+                            <label> Agosto 2021 - Actualidad </label>
+                            <p>
 
-                                <div class="row">
-
-                                    <div class="col-lg-3">
-                                        <h4 class="text-center"> Programa de Gestantes y Lactantes </h4>
-                                        <hr>
-                                        <div class="d-flex justify-content-center">
-                                            <button type="button" class="btn btn-info btn-darken-1"> Ingresar </button>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-3">
-                                        <button type="button" class="btn form-control mb-1 btn-lighten-1 btn-info"> <b style="font-size: large;"> 75 </b> Nuevas Atenciones </button>
-                                        <button type="button" class="btn form-control mb-1 btn-lighten-1 btn-warning"> <b style="font-size: large;"> 75 </b> Seguimientos Pendientes </button>
-                                        <button type="button" class="btn form-control mb-1 btn-lighten-1 btn-success"> <b style="font-size: large;"> 75 </b> Seguimientos Realizados </button>
-                                        <button type="button" class="btn form-control mb-1 btn-lighten-1 btn-danger"> <b style="font-size: large;"> 75 </b> Seguimientos No Realizados </button>
-                                    </div>
-
-                                </div>
-                            </div>            
-                        </div>
+                            </p>
+                        </section>
                     </div>
                 </div>
 
             </section>
 
-            <aside class="col-3">
+            <aside class="col-4">
 
                 <br>
 

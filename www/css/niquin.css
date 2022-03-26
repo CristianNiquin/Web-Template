@@ -1,0 +1,62 @@
+
+.marco-graph {
+    border: 2px solid;
+    border-radius: 32px;
+    border-color: rgba(23, 162, 184, 0.9);
+}
+
+.spinner {
+    display: flex;
+    justify-content: center;
+}
+
+.spinner::after {
+    content: "";
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height: 64px;
+    width: 64px;
+    border: 8px solid #dddddd;
+    border-radius: 50%;
+    border-top-color: #49BDDA;
+    /* border-bottom-color: #f4266a; */
+    /* border-top-style: groove; */
+    animation: spin 10000s infinite linear;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.mdl_bckdrp {
+    opacity: .5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    transition: opacity .15s linear;
+}
+
+
+table {
+    width: 100%;
+}
+
+th {
+    text-align: center;
+    font-weight: 500;
+}
+
+th, td {
+    padding: 0.5rem 0.5rem;
+}
+
+.table-bordered th, .table-bordered td {
+    border: 1px solid #bbb;
+}
+
